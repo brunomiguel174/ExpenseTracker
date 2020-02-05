@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "lato";
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(109, 188, 248, 0.8);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.h1-header{
+    letter-spacing: 20px;
+}
+
+main {
+    background:#F7F7F7;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.p-yourBalance{
+    font-size: 40px;
+}
+
+.money-size {
+    font-size: 30px;
+}
+
+.container-income-expense {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 1px 1px 5px gray;
+    text-align: center;
+}
+
+.income {
+    width: 100%;
+    border-right: 4px solid grey;
+}
+
+.moneyDisplaySize {
+    font-size: 30px;
+}
+
+.money-color__income {
+    color: #2ECC71;
+}
+
+.money-color__expense {
+    color: #C0392B;
+}
+
+.expense {
+    width: 100%;
+}
+
+.history-ddNewTransaction_border {
+    border-bottom: 1px solid #bbb;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.form-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .input-validation {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    padding: 0 10px 0 10px;
+}
+
+.button-transaction__main { 
+    background: #9C88FF;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: #626262;
+    width: 324px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button-transaction__main:hover { 
+    background: #856EFA;
+}
+
+footer {
+    height: 60px;
+    background: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+ }
+
+footer > p {
+    color: white;
+}
+
+#img__footer {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: -20px;
+}
+
+.p-warning{
+    color:red;
+}
+
+@media (max-width: 546px) {
+    .h1-header{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+    .p-yourBalance{
+        font-size: 20px;
+    }
+    .money-size {
+        font-size: 24px;
+    }
+    .container {
+        margin-bottom: 20px;
+    }
+    .container-income-expense {
+        padding: 12px;
+    }
+    .button-transaction__main { 
+        height: 44px;
+    }
+
+    #img__footer {
+        right: 20px;
+        top: 10px;
+    }
+    .input-validation {
+        height: 30px;
+    }
+
+
+}

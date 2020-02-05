@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="h1-header">Expense Tracker</h1>
+    </header>
+    <main>
+
+        <div>
+            <div class="container">
+                <p class="p-yourBalance">YOUR BALANCE</p>
+                <p class="money-size">$0.00</p>
+            </div>
+
+            <div class="container container-income-expense">
+                <div class="income">
+                    <p>Income</p>
+                    <p class="moneyDisplaySize money-color__income">$0.00</p>
+                </div>
+
+                <div class="expense">
+                    <p>Expense</p>
+                    <p class="moneyDisplaySize money-color__expense">$0.00</p>
+                </div>
+
+            </div>
+
+            <div class="history-ddNewTransaction_border container">
+                <h4 class="margin-bottom">History</h4>
+            </div>
+
+            <div class="history-ddNewTransaction_border container">
+                <h4 class="margin-bottom">Add new transaction</h4>
+            </div>
+
+            <form class="form-main">
+                <h5 class="margin-bottom">Text</h5>
+                <p class="p-warning margin-bottom"> </p>
+                <input required class="input-validation margin-bottom" type="text" placeholder="Enter text..." />
+                <h5 class="margin-bottom">Amount <br>(negative - expense, positive - income)</h5>
+                <p class="p-warning margin-bottom"> </p>
+                <input required class="input-validation margin-bottom" type="number" placeholder="Enter Amount..." />
+                <button class="button-transaction__main">Add transaction</button>
+            </form>
+
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+
+    </main>
+
+    <footer>
+        
+        <p>Made with love :)</p>
+        <img id="img__footer" src="./settings.png">
+    </footer>
+
+    <script src="./index.js" defer></script>
+
+</body>
+
+</html>
